@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viktor's Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+      <div class="nav">
+          <div class="left-side">
+              <div class="nav-link">
+                   <a href="index.html">Home</a>
+              </div>
+
+              <div class="nav-link">
+                  <a href="about.html">About</a>
+              </div>
+          </div>
+
+
+          <div class="right-side">
+              <div class="brand">
+                  <div> VIKTOR MADJOVSKI </div>
+              </div>
+          </div>
+      </div>
+          <div class="content">
+              <div class="portfolio-items">
+
+                  <div class="portfolio-item">
+                      <div class="img-background" style="background-image: url(images/received_257365385206674~3.jpeg)"></div>
+                      <div class="img-text">
+                          <div class="logo">
+                              <img src="images/vlogo.png">
+                          </div>
+                          <div class="subtitle">
+                              picture 1
+                          </div>
+
+                      </div>
+                  </div>
+
+                  <div class="portfolio-item">
+                      <div class="img-background" style="background-image: url(images/IMG_5699.JPG)"></div>
+                      <div class="img-text">
+                          <div class="logo">
+                              <img src="images/vlogo.png">
+                          </div>
+                          <div class="subtitle">
+                              picture 2
+                          </div>
+
+                      </div>
+                  </div>
+                  <div class="portfolio-item">
+                      <div class="img-background" style="background-image: url(images/120701545_368198464231038_706820266618811838_n.jpg)"></div>
+                      <div class="img-text">
+                          <div class="logo">
+                              <img src="images/vlogo.png">
+                          </div>
+                          <div class="subtitle">
+                              picture 3
+                          </div>
+
+                      </div>
+                  </div>
+                  <div class="portfolio-item">
+                      <div class="img-background" style="background-image: url(images/picture4.jpg)"></div>
+                      <div class="img-text">
+                          <div class="logo">
+                              <img src="images/vlogo.png">
+                          </div>
+                          <div class="subtitle">
+                              picture 4
+                          </div>
+
+                      </div>
+                  </div>
+                  <div class="portfolio-item">
+                      <div class="img-background" style="background-image: url(images/picture5.jpg)"></div>
+                      <div class="img-text">
+                          <div class="logo">
+                              <img src="images/vlogo.png">
+                          </div>
+                          <div class="subtitle">
+                              picture 5
+                          </div>
+
+                      </div>
+                  </div>
+                  <div class="portfolio-item">
+                      <div class="img-background" style="background-image: url(images/picture6.jpg)"></div>
+                      <div class="img-text">
+                          <div class="logo">
+                              <img src="images/vlogo.png">
+                          </div>
+                          <div class="subtitle">
+                              picture 6
+                          </div>
+
+                      </div>
+                  </div>
+
+              </div>
+
+
+          </div>
+
+
+
+  </div>
+</body>
+<script>
+    var portfolioItems= document.querySelectorAll('.portfolio-item')
+
+    portfolioItems.forEach(portfolioItem => {
+         portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img-darken');
+         })
+
+         portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+         })
+    })
+</script>
+</html>
